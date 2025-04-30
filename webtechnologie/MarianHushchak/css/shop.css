@@ -1,0 +1,119 @@
+.BackGroundFoto1,
+.BackGroundFoto2,
+.BackGroundFoto3,
+.BackGroundFoto4,
+.BackGroundFoto5,
+.BackGroundFoto6 {
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  width: 300px;
+  border-radius: 25px;
+  border: 4px solid #7f5af0;
+  margin: 10px auto;
+
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+.grid-class-foto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  align-content: space-between;
+}
+.BackGroundFoto1 {
+  background-image: url("../assets/images/BoksHelm.jpg");
+}
+.BackGroundFoto2 {
+  background-image: url("../assets/images/BoksHandSchoenen.png");
+}
+.BackGroundFoto3 {
+  background-image: url("../assets/images/BoksSchoenen.jpg");
+}
+.BackGroundFoto4 {
+  background-image: url("../assets/images/BoksBandages.jpg");
+}
+.BackGroundFoto5 {
+  background-image: url("../assets/images/mondStuk.jpg");
+}
+.BackGroundFoto6 {
+  background-image: url("../assets/images/BoksZak.jpg");
+}
+.description {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: solid #ffffff;
+  background-color: #ffffff;
+  margin: 10px;
+}
+.button-add-to-shopping-cart {
+  width: 100px;
+}
+.namebold {
+  font-size: larger;
+  color: rgb(0, 0, 0);
+}
+.descriptionsmall {
+  color: rgba(64, 62, 62, 0.844);
+}
+.price {
+  font-size: larger;
+  font-weight: bold;
+  color: #7f5af0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 1254px;
+  margin: 0 auto;
+}
+.cart-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+}
+.cart-items,
+.wishlist-items {
+  min-height: 50px;
+  background-color: #7f5af0;
+  border: 1px solid #7f5af0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .grid-class-foto {
+    display: grid;
+    order: 1;
+    flex: 1;
+    justify-content: flex-start;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .main-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .cart-section {
+    order: 2;
+    min-width: 250px;
+    min-height: 600px;
+  }
+  .cart-items,
+  .wishlist-items {
+   min-height: 280px;
+  }
+}

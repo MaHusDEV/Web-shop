@@ -1,0 +1,164 @@
+.BackGroundFoto1,
+.BackGroundFoto2,
+.BackGroundFoto3 {
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  width: 300px;
+  border-radius: 25px;
+  border: 4px solid #7f5af0;
+
+  margin: 20px auto;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+.BackGroundFoto1 {
+  background-image: url("../assets/images/BoksHelm.jpg");
+}
+.BackGroundFoto2 {
+  background-image: url("../assets/images/BoksHandSchoenen.png");
+}
+.BackGroundFoto3 {
+  background-image: url("../assets/images/BoksSchoenen.jpg");
+}
+.description {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: solid #ffffff;
+  background-color: #ffffff;
+  margin: 10px;
+}
+.namebold {
+  font-size: larger;
+  color: rgb(0, 0, 0);
+}
+.descriptionsmall {
+  color: rgba(64, 62, 62, 0.844);
+}
+.price {
+  font-size: larger;
+  font-weight: bold;
+  color: #7f5af0;
+}
+.Aboutme {
+  border: solid #7f5af0;
+  background-color: #7f5af0;
+  border-radius: 15px;
+  padding: 50px;
+  max-width: 500px;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .left-column {
+    flex: 1;
+    align-items: flex-start;
+  }
+  .container-3 {
+    order: 1;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .grid-class-foto {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "left right"
+      "left right2";
+    gap: 20px;
+    margin-left: 10px;
+  }
+  .BackGroundFoto1 {
+    grid-area: left;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../assets/images/BoksHelmHigh.jpg);
+    height: 664px;
+  }
+  .BackGroundFoto2 {
+    grid-area: right;
+  }
+  .BackGroundFoto3 {
+    grid-area: right2;
+  }
+  .MyInfo {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    margin-top: 20px;
+  }
+  .Myphoto {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: -100px;
+    position: relative;
+    border: 3px solid #7f5af0;
+  }
+  .Aboutme {
+    padding-left: 20%;
+  }
+}
+@media (max-width: 767px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Myphoto {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: -50px;
+    position: relative;
+    border: 3px solid #7f5af0;
+  }
+  .MyInfo {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+  .grid-class-foto {
+    order: 2;
+  }
+  .container-3 {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 1;
+    display: contents;
+  }
+}

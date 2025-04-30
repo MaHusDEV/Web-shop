@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      defer
+    ></script>
+    <script src="js/contact.js" defer></script>
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/images/Logo.png" alt="Logo" class="Logo" />
+      <div>
+        <nav>
+          <ul class="navcolor">
+            <li><a href="index.html" target="_blank">HOME</a></li>
+            <li><a href="shop.html" target="_blank">SHOP</a></li>
+            <li><a href="contact.html" target="_blank">CONTACT</a></li>
+            <li>
+              <form class="search-form">
+                <input
+                  type="text"
+                  placeholder="search..."
+                  class="search-input"
+                />
+                <button type="submit" class="search-button">🔍</button>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="contact-page">
+        <div id="map" class="map"></div>
+        <section class="contact-form-section">
+          <h1 class="center">Contact us</h1>
+          <form action="contact.html" method="post" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="who">Who to contact?</label>
+            <select name="who" id="who">
+              <option value="dev">Website builder</option>
+              <option value="shop">Responsible webshop</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <button type="submit" class="button">Send Message</button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p class="space"></p>
+      <p class="center">Boks Industrie, gemaakt door Marian</p>
+    </footer>
+  </body>
+</html>
