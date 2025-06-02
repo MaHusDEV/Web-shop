@@ -13,6 +13,7 @@
   align-items: flex-end;
   position: relative;
   overflow: hidden;
+  box-shadow: -5px 1px 20px #450dec;
 }
 .BackGroundFoto1 {
   background-image: url("../assets/images/BoksHelm.jpg");
@@ -23,34 +24,13 @@
 .BackGroundFoto3 {
   background-image: url("../assets/images/BoksSchoenen.jpg");
 }
-.description {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 10px;
-  border: solid #ffffff;
-  background-color: #ffffff;
-  margin: 10px;
-}
-.namebold {
-  font-size: larger;
-  color: rgb(0, 0, 0);
-}
-.descriptionsmall {
-  color: rgba(64, 62, 62, 0.844);
-}
-.price {
-  font-size: larger;
-  font-weight: bold;
-  color: #7f5af0;
-}
 .Aboutme {
   border: solid #7f5af0;
   background-color: #7f5af0;
   border-radius: 15px;
   padding: 50px;
   max-width: 500px;
+  box-shadow: -2px 1px 10px #7052c2;
 }
 .main-container {
   display: flex;
@@ -59,6 +39,9 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+.font-shadow {
+  text-shadow: -5px 1px 5px #450dec;
 }
 @media (min-width: 768px) {
   .main-container {
@@ -90,7 +73,7 @@
     width: 100%;
     background-size: cover;
     background-position: center center;
-    background-image: url(../assets/images/BoksHelmHigh.jpg);
+    background-image: url(../assets/images/BoksHelmHigh2.png);
     height: 664px;
   }
   .BackGroundFoto2 {

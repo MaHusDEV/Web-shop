@@ -8,6 +8,7 @@
   border: solid #7f5af0 4px;
   border-radius: 20px;
   object-fit: cover;
+  box-shadow: -5px 1px 20px #450dec;
 }
 .product-title {
   text-align: center;
@@ -62,7 +63,6 @@
     "buttons";
   gap: 20px;
 }
-
 .product-title {
   grid-area: title;
 }
@@ -76,6 +76,7 @@
 }
 .product-list {
   grid-area: list;
+  margin-right: 400px;
 }
 .button-container {
   grid-area: buttons;

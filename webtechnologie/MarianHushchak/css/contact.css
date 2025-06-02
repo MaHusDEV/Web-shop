@@ -11,6 +11,7 @@
   width: 100%;
   border: 4px solid #7f5af0;
   border-radius: 10px;
+  box-shadow: -2px 1px 10px #7052c2;
 }
 .contact-form-section {
   width: 100%;
@@ -33,15 +34,21 @@
 .contact-form label {
   font-weight: bold;
 }
+select,
+input,
+#message {
+  box-shadow: -2px 1px 10px #7052c2;
+  background-color: #7f5af0;
+}
 .button {
   background-color: #7f5af0;
-  border: none;
   border-radius: 5px;
   padding: 12px;
   cursor: pointer;
   font-weight: bold;
   width: fit-content;
   align-self: center;
+  box-shadow: -2px 1px 10px #7052c2;
 }
 @media (min-width: 768px) {
   .contact-page {
